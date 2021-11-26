@@ -14,11 +14,11 @@ volt_info = {
 
 print(volt_info["dict1"]["range"])
 
-input = 20
+input = 30.3
 choice = ""
 
 for item in volt_info.keys():
-    if volt_info[item]["range"] >= input:
+    if volt_info[item]["range"]+1 >= input:
         choice = item
         break
 
